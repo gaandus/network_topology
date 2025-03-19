@@ -1,0 +1,494 @@
+{
+"nodes":[{
+			"id": 18740,
+			"group": 1,
+			"label": "Trailer",
+			"level": 1,
+			"status": "up",
+			"device": "Router",
+			"devicelink": "../images/NetworkMapImages/Router.png",
+			"last_poll": "2019-05-01T10:10:22.0000-05:00",
+			"down_time": "",
+			"location_description": "In Turner office trailer",
+			"location_id": 2,
+			"device_picture": "../images/NetworkMapImages/RB2011.png"
+		}, {
+			"id": 18741,
+			"group": 1,
+			"label": "Datacenter",
+			"level": 2,
+			"status": "up",
+			"device": "Router",
+			"devicelink": "../images/NetworkMapImages/Router.png",
+			"last_poll": "2019-05-01T10:10:07.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 7,
+			"device_picture": "../images/NetworkMapImages/RB3011.png"
+		}, {
+			"id": 18819,
+			"group": 1,
+			"label": "AP 2.2 - Origin AP",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:07.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18820,
+			"group": 1,
+			"label": "AP 1.1",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:10.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18821,
+			"group": 1,
+			"label": "AP 1.2",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:10.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18822,
+			"group": 1,
+			"label": "AP 1.3",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:14.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18823,
+			"group": 1,
+			"label": "AP 1.4",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:40.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 5 Days 2 Hours 1 Minute ",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18824,
+			"group": 1,
+			"label": "AP 1.5",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:15.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18826,
+			"group": 1,
+			"label": "AP 1.6",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:19.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18827,
+			"group": 1,
+			"label": "AP 1.7",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:10.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18828,
+			"group": 1,
+			"label": "AP 1.8",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:13.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18829,
+			"group": 1,
+			"label": "AP 1.9",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:10.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18830,
+			"group": 1,
+			"label": "AP 1.10",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:14.0000-05:00",
+			"down_time": "",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18831,
+			"group": 1,
+			"label": "AP 1.11",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:59.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 43 Days 1 Hour 23 Minutes ",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18832,
+			"group": 1,
+			"label": "AP 1.12",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:58.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 43 Days 1 Hour 21 Minutes ",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18837,
+			"group": 1,
+			"label": "AP 1.13",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:57.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 36 Days 20 Hours 14 Minutes ",
+			"location_description": "On first floor of Building 1",
+			"location_id": 4,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18838,
+			"group": 1,
+			"label": "AP 2.1",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:59.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 50 Days 2 Hours 7 Minutes ",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18839,
+			"group": 1,
+			"label": "AP 2.3",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:09:00.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 6 Days 19 Hours 28 Minutes ",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18840,
+			"group": 1,
+			"label": "AP 2.4",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:09:00.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18841,
+			"group": 1,
+			"label": "AP 2.5",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:59.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 50 Days 2 Hours 7 Minutes ",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18842,
+			"group": 1,
+			"label": "AP 2.6",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:09:00.0000-05:00",
+			"down_time": "</br><b>Outage Length:</b> 13 Days 18 Hours 47 Minutes ",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18843,
+			"group": 1,
+			"label": "AP 2.7",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:18.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18844,
+			"group": 1,
+			"label": "AP 2.8",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:19.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18845,
+			"group": 1,
+			"label": "AP 2.9",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:17.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18846,
+			"group": 1,
+			"label": "AP 2.10",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:10:10.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18847,
+			"group": 1,
+			"label": "AP 2.11",
+			"level": 3,
+			"status": "down",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:59.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}, {
+			"id": 18849,
+			"group": 1,
+			"label": "AP 2.12",
+			"level": 3,
+			"status": "up",
+			"device": "Access Point",
+			"devicelink": "../images/NetworkMapImages/Access Point.png",
+			"last_poll": "2019-05-01T10:08:17.0000-05:00",
+			"down_time": "",
+			"location_description": "On second floor of Building 1",
+			"location_id": 6,
+			"device_picture": "../images/NetworkMapImages/DEWALT AP.png"
+		}
+	],
+"links":[{
+			"target": 18740,
+			"source": 18741,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18819,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18820,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18821,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18822,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18823,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18824,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18826,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18827,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18828,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18829,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18830,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18831,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18832,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18837,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18838,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18839,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18840,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18841,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18842,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18843,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18844,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18845,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18846,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18847,
+			"strength": 0.7
+		}, {
+			"target": 18741,
+			"source": 18849,
+			"strength": 0.7
+		}
+	],
+"layoutarray":{
+				"id": 1,
+				"name": "Jobsite",
+				"level": 1,
+				"children": [{
+						"id": 2,
+						"Size": 3,
+						"name": "Turner Office",
+						"level": 2
+					}, {
+						"id": 3,
+						"name": "Building 1",
+						"level": 4,
+						"children": [{
+								"id": 4,
+								"Size": 13,
+								"name": "Floor 1",
+								"level": 5
+							}, {
+								"id": 6,
+								"Size": 12,
+								"name": "Floor 2",
+								"level": 6
+							}, {
+								"id": 7,
+								"Size": 3,
+								"name": "Data Center",
+								"level": 3
+							}
+						]
+					}
+				]
+			}
+			}

@@ -1,0 +1,192 @@
+@charset "ISO-8859-1";
+
+body {
+    margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  padding: 10px 10px 10px 25px ;
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+#instructions {
+  padding: 0px 0px 5px 30px;
+  font: 16px sans-serif;
+  color: #aaa;
+  font-style: italic;
+  
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #81b6c1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #999;
+}
+
+.button:hover
+ {background-color: #96d1dd}
+
+.button:active{
+  background-color: #547a82;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+.states :hover {
+  fill: #aae88f;
+}
+
+.states {
+  fill: #e2ffd6;
+  stroke: #000;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.state-borders {
+  fill: none;
+  stroke: #000;
+  stroke-width: 0.1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: left;								
+    padding: 8px;				
+    font: 16px sans-serif;		
+    background: rgb(176, 196, 222);	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;
+    z-index: 2;	
+}
+
+#h {	
+
+    font: 24px sans-serif;	
+    font-weight: bold;	
+    text-align: center;	
+		
+}
+
+svg.map { 
+
+	background-color: #e8fffa;
+	border-radius: 16px;		
+
+	}
+	
+svg.bar,
+#viz { 
+
+	background-color: #f6ffff;
+	border-radius: 16px;		
+
+	}
+
+.point {
+  stroke: #000;
+  stroke-width: 1px;
+	
+}	
+
+rect.cell {
+  stroke: #ddd;
+  stroke-width: 2px;
+  align-content: center;
+  
+}
+
+text.label {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  fill: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#page-container {
+  position: relative;
+   min-height: 100vh;
+    margin-top: 85px;
+      
+}
+#content-wrap {
+  padding-bottom: 15px;    /* Footer height */
+  padding: 0px 0px 0px 25px;
+  
+}
+#footer {
+  position: absolute;
+  padding: 0px 0px 0px 25px;
+  bottom: 0;
+  width: 100%;
+  height: 15px;            /* Footer height */
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.tooltip{
+  text-anchor: middle;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  fill:black;
+}
