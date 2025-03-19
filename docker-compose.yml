@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  network-topology:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: network-topology
+    restart: always
+    ports:
+      - "8080:80"  # Map container port 80 to host port 8080 (you can change this)
+    volumes:
+      - ./data:/usr/share/nginx/html/data  # Mount data directory as volume for easier updates
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"  # For Traefik integration (if you use it)
+      - "traefik.http.routers.network-topology.rule=Host(`network.dtanderson.net`)"
+      - "traefik.http.routers.network-topology.entrypoints=websecure"
+      - "traefik.http.routers.network-topology.tls.certresolver=letsencrypt"
+
+networks:
+  web:
+    external: true  # Assuming you'll have a shared network for your reverse proxy 
