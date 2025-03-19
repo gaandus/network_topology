@@ -1,24 +1,25 @@
-# 🚧 site_d3 - Work in Progress 🚧
-
-This project is currently in development. I am in the process of compiling and uploading the necessary files.
-
-🔧 **Status:** Code is being prepared and will be available soon.
-
-📅 **ETA:** TBD
-
-Stay tuned!
-
 # Network Topology Visualization
 
-A visualization of US locations with force-directed graph of IoT equipment on site.
+A visualization of US locations with force-directed graph of IoT equipment on site. This interactive web application displays a network topology map of locations across the United States, showing the connections and relationships between IoT devices at different sites.
+
+View the live application: [network.dtanderson.net](https://network.dtanderson.net)
 
 ## Features
 
-- Interactive map of US locations
+- Interactive map of US locations with geospatial representation
 - Force-directed graph visualization of network topology
 - Detailed information about IoT equipment at each location
+- Responsive design for desktop and mobile viewing
+- Real-time data updates and visualization
 
-## Development Setup
+## Technology Stack
+
+- D3.js for data visualization and interactive graphics
+- JavaScript/HTML/CSS for front-end functionality
+- Docker for containerization and easy deployment
+- Nginx for reverse proxy and SSL termination (optional)
+
+## Local Development
 
 1. Clone the repository:
    ```
@@ -28,9 +29,13 @@ A visualization of US locations with force-directed graph of IoT equipment on si
 
 2. Open `index.html` in your browser to view the application locally.
 
-## Docker Deployment
+3. Modify the files in the following directories:
+   - `js/`: JavaScript code for application logic and visualization
+   - `css/`: Styling for the application
+   - `data/`: JSON data files for the network topology
+   - `images/`: Icons and graphics used in the application
 
-This application can be deployed using Docker:
+## Docker Deployment
 
 ### Local Docker Setup
 
@@ -47,7 +52,7 @@ To deploy to your VPS:
 
 1. SSH into your VPS:
    ```
-   ssh user@dtanderson.net
+   ssh user@your-vps-hostname
    ```
 
 2. Clone the repository directly on your VPS:
@@ -62,7 +67,7 @@ To deploy to your VPS:
    ./deploy.sh
    ```
 
-The script will:
+The deploy script will:
 - Update the repository from GitHub if it's already cloned
 - Set up the Docker container
 - Create the necessary Docker network
@@ -71,26 +76,31 @@ The application will be available on port 8080 (or as configured in docker-compo
 
 #### Nginx Configuration (Optional)
 
-If you want to set up Nginx as a reverse proxy for the subdomain:
+The application can be accessed directly at port 8080, or you can set up Nginx as a reverse proxy for a custom domain:
 
-1. Copy the Nginx configuration file to your Nginx sites-available:
+1. Create a basic Nginx configuration:
    ```
-   sudo cp nginx-site-config.conf /etc/nginx/sites-available/network.dtanderson.net
+   server {
+       listen 80;
+       server_name your-domain.com;
+       
+       location / {
+           proxy_pass http://127.0.0.1:8080;
+           proxy_set_header Host $host;
+           proxy_set_header X-Real-IP $remote_addr;
+           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+           proxy_set_header X-Forwarded-Proto $scheme;
+       }
+   }
    ```
 
-2. Create a symbolic link to enable the site:
-   ```
-   sudo ln -sf /etc/nginx/sites-available/network.dtanderson.net /etc/nginx/sites-enabled/
-   ```
+2. Save this to `/etc/nginx/sites-available/your-domain`
 
-3. Test and reload Nginx:
+3. Enable the site and set up SSL with Let's Encrypt:
    ```
+   sudo ln -sf /etc/nginx/sites-available/your-domain /etc/nginx/sites-enabled/
    sudo nginx -t && sudo systemctl reload nginx
-   ```
-
-4. Set up SSL with Let's Encrypt (recommended):
-   ```
-   sudo certbot --nginx -d network.dtanderson.net
+   sudo certbot --nginx -d your-domain.com
    ```
 
 ## Updating the Application
@@ -104,14 +114,7 @@ When you make changes to the application:
    git push
    ```
 
-2. On your VPS, go to the repository directory and run the deploy script:
-   ```
-   cd /path/to/network_topology
-   git pull  # Pull the latest changes
-   ./deploy.sh
-   ```
-
-Or simply run the deploy script which will automatically pull the latest changes:
+2. On your VPS, run the deploy script to pull the latest changes and redeploy:
    ```
    cd /path/to/network_topology
    ./deploy.sh
@@ -119,4 +122,8 @@ Or simply run the deploy script which will automatically pull the latest changes
 
 ## License
 
-[Your license information here]
+[MIT License](LICENSE)
+
+## Author
+
+- [gaandus](https://github.com/gaandus)
