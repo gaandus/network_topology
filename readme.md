@@ -43,7 +43,7 @@ This application can be deployed using Docker:
 
 ### VPS Deployment
 
-To deploy to your VPS with a subdomain:
+To deploy to your VPS:
 
 1. SSH into your VPS:
    ```
@@ -65,8 +65,33 @@ To deploy to your VPS with a subdomain:
 The script will:
 - Update the repository from GitHub if it's already cloned
 - Set up the Docker container
-- Configure Nginx for the subdomain
-- Provide instructions for SSL certificate setup
+- Create the necessary Docker network
+
+The application will be available on port 8080 (or as configured in docker-compose.yml).
+
+#### Nginx Configuration (Optional)
+
+If you want to set up Nginx as a reverse proxy for the subdomain:
+
+1. Copy the Nginx configuration file to your Nginx sites-available:
+   ```
+   sudo cp nginx-site-config.conf /etc/nginx/sites-available/network.dtanderson.net
+   ```
+
+2. Create a symbolic link to enable the site:
+   ```
+   sudo ln -sf /etc/nginx/sites-available/network.dtanderson.net /etc/nginx/sites-enabled/
+   ```
+
+3. Test and reload Nginx:
+   ```
+   sudo nginx -t && sudo systemctl reload nginx
+   ```
+
+4. Set up SSL with Let's Encrypt (recommended):
+   ```
+   sudo certbot --nginx -d network.dtanderson.net
+   ```
 
 ## Updating the Application
 
